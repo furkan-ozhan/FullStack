@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <h1 class="mb-3">{{ 'CHANGE_CONTACT' | translate }}</h1>
+ <div class="row">
+    <div class="col-6">
+        <form #form="ngForm" (ngSubmit)="updateContact()">
+            <div class="mb-3">
+                <label for="id">Id</label>
+                <input type="text" class="form-control" id="id" readonly name="id" [(ngModel)]="contactDetails.id">
+              </div>
+            <div class="mb-3">
+              <label for="name">{{ 'NAME' | translate }}</label>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="contactDetails.name">
+            </div>
+            <div class="mb-3">
+                <label for="email">{{ 'EMAIL' | translate }}</label>
+                <input type="email" class="form-control" id="email" name="email" [(ngModel)]="contactDetails.email">
+              </div>
+              <div class="mb-3">
+                <label for="phone">{{ 'PHONE' | translate }}</label>
+                <input type="number" class="form-control" id="phone" name="phone" [(ngModel)]="contactDetails.phone">
+              </div>
+              <div class="mb-3">
+                <label for="city">{{ 'CITY' | translate }}</label>
+                <input type="text" class="form-control" id="city" name="city" [(ngModel)]="contactDetails.city">
+              </div>
+            <button type="submit" class="btn btn-outline-primary mr-5">{{ 'SAVE' | translate }}</button>
+            <button type="button" class="btn btn-danger"(click)="deleteContact()">{{ 'DELETE' | translate }}</button> 
+    </form>
+    </div>
+ </div>
+
+
+</div>

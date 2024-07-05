@@ -1,0 +1,27 @@
+<div class="container my-5">
+    <h1 class="mb-3">{{ 'PHONEBOOK' | translate }}</h1>
+
+    <table class="table table-stripped table-hover" [ngClass]="{'table-light': !isDarkMode, 'table-dark': isDarkMode}" *ngIf="contacts && contacts.length>0">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>{{ 'NAME' | translate }}</th>
+                <th>{{ 'EMAIL' | translate }}</th>
+                <th>{{ 'PHONE' | translate }}</th>
+                <th>{{ 'CITY' | translate }}</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact of contacts">
+                <td>{{contact.id}}</td>
+                <td>{{contact.name}}</td>
+                <td>{{contact.email}}</td>
+                <td>{{contact.phone}}</td>
+                <td>{{contact.city}}</td>
+                <td><a [routerLink]="['/contacts','edit',contact.id]">{{'VIEW'|translate}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!contacts || contacts.length<=0">{{ 'NO_CONTACTS_FOUND' | translate }}</p>
+</div>

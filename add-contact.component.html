@@ -1,0 +1,28 @@
+<div class="container my-5">
+    <h1 class="mb-3">{{ 'ADD_NEW_CONTACT' | translate }}</h1>
+ <div class="row">
+    <div class="col-6">
+        <form #form="ngForm" (ngSubmit)="addContact()">
+            <div class="mb-3">
+              <label for="name">{{ 'NAME' | translate }}</label>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="addContactRequest.name">
+            </div>
+            <div class="mb-3">
+                <label for="email">{{ 'EMAIL' | translate }}</label>
+                <input type="email" class="form-control" id="email" name="email" [(ngModel)]="addContactRequest.email">
+              </div>
+              <div class="mb-3">
+                <label for="phone">{{ 'PHONE' | translate }}</label>
+                <input type="number" class="form-control" id="phone" name="phone" [(ngModel)]="addContactRequest.phone">
+              </div>
+              <div class="mb-3">
+                <label for="city">{{ 'CITY' | translate }}</label>
+                <input type="text" class="form-control" id="city" name="city" [(ngModel)]="addContactRequest.city">
+              </div>
+            <button type="submit" class="btn btn-primary">{{ 'APPLY' | translate }}</button>  
+    </form>
+    </div>
+ </div>
+
+
+</div>

@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Aydınlık Mod (Light Mode) */
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Karanlık Mod (Dark Mode) */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Navbar için özel stiller */
+.navbar-light {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+  
+.navbar-dark {
+    background-color: #343a40;
+    color: #fff;}
+    
+.table-light {
+         background-color: #fff;
+        color: #000;
+      }
+      
+.table-light th, .table-light td {
+        border-color: #dee2e6;
+      }
+.table-dark {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      
+.table-dark th, .table-dark td {
+        border-color: #343a40;
+      } 

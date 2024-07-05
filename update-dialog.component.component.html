@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>{{ 'UPDATE_CONTACT' | translate }}</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>{{ 'NAME' | translate }}</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>{{ 'SURNAME' | translate }}</mat-label>
+    <input matInput [(ngModel)]="data.surname">
+  </mat-form-field>
+  <!-- Diğer alanlar burada eklenebilir -->
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">{{ 'CANCEL' | translate }}</button>
+  <button mat-button (click)="onSaveClick()" cdkFocusInitial>{{ 'SAVE' | translate }}</button>
+</div>
