@@ -6,6 +6,6 @@ Stability is my priority right now. Interface is not.
 After updates, I am going to turn that into 3 pages: login-default-data grid. The time of Socket Technology SignalR is going to come.
 pop up alert will be shown with nothification js.
 Afterwards, I will use Google Cloud Cloud. Activating Dialogflow API, Cloud Speech-to-Text API, Cloud Text-to-Speech API will be my last mission.
-Defining Intent and Entity at agent, connecting backend by Webhook is for chatbot
+Defining Intent and Entity at agent, connecting backend by Webhook is for adding chatbot.
 preparing python: 1- capturing voice, 2- preprocessing audio data, 3- sending audio data to API, 4- speech recognition, 5- receiving and using results 6- sending python code
 with Flask as Rest API and taking it with HttpClient to the .NET CORE is the ending.
